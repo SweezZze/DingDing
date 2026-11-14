@@ -136,6 +136,12 @@ struct EventsView: View {
     /// Launch arguments used to take screenshots in the simulator.
     private func debugLaunchActions() async {
         let args = ProcessInfo.processInfo.arguments
+        if args.contains("-simulate") {
+            await store.startSimulation()
+            if let id = store.simulation?.template.summary.id { path = [id] }
+        } else if let i = args.firstIndex(of: "-openEvent"), i + 1 < args.count {
+            path = [args[i + 1]]
+        }
         if args.contains("-demoAlarms") {
             if store.details.isEmpty { await store.refreshAll() }
             for event in store.upcomingEvents.prefix(2) {
@@ -145,12 +151,7 @@ struct EventsView: View {
                 }
             }
         }
-        if args.contains("-simulate") {
-            await store.startSimulation()
-            if let id = store.simulation?.template.summary.id { path = [id] }
-        } else if let i = args.firstIndex(of: "-openEvent"), i + 1 < args.count {
-            path = [args[i + 1]]
-        }
+
     }
     #endif
 }

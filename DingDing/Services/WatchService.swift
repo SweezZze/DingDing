@@ -211,6 +211,8 @@ final class WatchService {
         return reference.timeIntervalSinceNow < 7 * 3600
     }
 
+    private var lastActivityUpdate: [String: Date] = [:]
+
     private static let createdKey = "activityCreated"
     private var activityCreated: [String: Double] {
         get { UserDefaults.standard.dictionary(forKey: Self.createdKey) as? [String: Double] ?? [:] }
@@ -220,13 +222,17 @@ final class WatchService {
     private func updateActivity(for detail: EventDetail, store: AppStore) {
         guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
         let state = contentState(for: detail, store: store)
-        let content = ActivityContent(state: state, staleDate: Date().addingTimeInterval(15 * 60))
+        // No stale date: an outdated Live Activity can get stuck on a loading spinner.
+        // Staleness is shown by the content itself (state.stale), and we re-send it regularly.
+        let content = ActivityContent(state: state, staleDate: nil)
         if let activity = activities[detail.id], activity.activityState != .active {
             activities[detail.id] = nil   // ended by iOS (8 h limit) or by the user
         }
         if let activity = activities[detail.id] ?? Activity<CardActivityAttributes>.activities.first(where: { $0.attributes.eventId == detail.id && $0.activityState == .active }) {
             activities[detail.id] = activity
-            guard activity.content.state != state else { return }
+            let last = lastActivityUpdate[detail.id] ?? .distantPast
+            guard activity.content.state != state || Date().timeIntervalSince(last) > 10 * 60 else { return }
+            lastActivityUpdate[detail.id] = Date()
             Task { await activity.update(content) }
         } else if store.appIsActive, wantsActivity(detail, store: store) {
             // A Live Activity can only be started while the app is on screen.
@@ -248,9 +254,9 @@ final class WatchService {
         for eventId in store.watchedEventIds {
             guard let detail = store.detail(for: eventId) else { continue }
             if let activity = activities[eventId], activity.activityState == .active,
-               Date().timeIntervalSince1970 - (activityCreated[activity.id] ?? 0) > 3600,
-               wantsActivity(detail, store: store), !detail.isLive {
-                // Older than 1 h: replace it by a fresh one (full 8 h ahead).
+               Date().timeIntervalSince1970 - (activityCreated[activity.id] ?? 0) > 10 * 60,
+               wantsActivity(detail, store: store) {
+                // Replace it by a fresh one: full 8 h ahead, and un-sticks a frozen display.
                 activities[eventId] = nil
                 activityCreated[activity.id] = nil
                 Task { await activity.end(nil, dismissalPolicy: .immediate) }
