@@ -1,0 +1,6 @@
+// Réglages communs. Tes valeurs perso (équipe Apple, identifiant) vont dans
+// Config/Local.xcconfig — copie Config/Local.example.xcconfig. Ce fichier n'est pas versionné.
+DEVELOPMENT_TEAM =
+DING_BUNDLE_PREFIX = com.example
+
+#include? "Local.xcconfig"

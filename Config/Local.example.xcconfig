@@ -1,0 +1,9 @@
+// Copie ce fichier en Config/Local.xcconfig puis remplis-le.
+
+// Ton Team ID Apple (Xcode → Settings → Accounts → ton compte → Team).
+// Un compte Apple gratuit suffit ("Personal Team").
+DEVELOPMENT_TEAM = ABCDE12345
+
+// Préfixe unique à toi pour l'identifiant de l'app (ex. com.prenomnom).
+// L'app sera com.prenomnom.dingding.
+DING_BUNDLE_PREFIX = com.prenomnom

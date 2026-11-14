@@ -1,0 +1,16 @@
+# Builds
+build.noindex/
+build/
+DerivedData/
+*.ipa
+*.xcarchive
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+
+# Personal settings (team, bundle id, iPhone id)
+Config/Local.xcconfig
+scripts/renew.env
+
+.DS_Store

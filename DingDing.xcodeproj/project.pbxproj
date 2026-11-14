@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092E32207412C444939E76D7 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210BAAC9CDDBE43D58034190 /* AlarmScheduler.swift */; };
+		0CE4C43EB9AF447FBFBDB17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D18BAF70D144DDFED16F0B /* Assets.xcassets */; };
+		12DBF95802742DBEE621C7E5 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3BBDAC3DDC66B257FB0B9 /* Components.swift */; };
+		189367F0273CD5F9B47BE6AA /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BDC20C071618B3A52AD4F /* EventsView.swift */; };
+		1C726CCACD8395C9089EC77F /* VeilleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989205FBB351BC1D5AC8BCD /* VeilleViews.swift */; };
+		29A99B51614683DCC31F66D0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D9197A31C862E3ADE2216 /* Models.swift */; };
+		2ADF2664C50A3A202ADF3085 /* SharedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D45543CAA6F64EDCDF02C5 /* SharedActivity.swift */; };
+		3559ABDE6FEA90CF487845DD /* ESPNClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EBF14CF1D60A69F1A9F37 /* ESPNClient.swift */; };
+		377FEDD92FD77B89A99FCC2F /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC48C30D41C6DAB80665B51 /* PreviewData.swift */; };
+		386C0C4D93707C4DC2F4CBDD /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156217AA44A3C63F4744A112 /* EventDetailView.swift */; };
+		420832766CBBD8C57F74EB47 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71771C52C302DE51E7DB6E40 /* AppStore.swift */; };
+		4C5208F913F434D4DF921D61 /* fightcenter_final.json in Resources */ = {isa = PBXBuildFile; fileRef = 27949B7B290710EF724CD70E /* fightcenter_final.json */; };
+		4E600B4C9AB7DD00F6AA6CC7 /* DingDingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C52F11A3A2396FE128766 /* DingDingApp.swift */; };
+		58AFF818F246F6C1DE3C130A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F212BC16EB2263926F0451F /* ContentView.swift */; };
+		63CCF15C5D74EA700799FA18 /* WatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6146314D6BC715D980048780 /* WatchService.swift */; };
+		78F8A7EF4BBA9DD42B1A85CB /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1CB4C1FCC9ED2726E885E /* AlarmsView.swift */; };
+		80D7DA5D1C57BEE54596C970 /* scoreboard_ufc.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AB61AB87B482F5A7FC2D9F5 /* scoreboard_ufc.json */; };
+		906C04E0E11E5903CCA7B806 /* DingDingWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F53DCB2BC19AAA58E6E97610 /* DingDingWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C8E692A783065FE6C370876 /* DingDingWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3599B145657B4FA0F9E09F7 /* DingDingWidgets.swift */; };
+		A079692E73B3AB9A91A8EFEF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335E52586B16EEC5621382EF /* Log.swift */; };
+		A9D510FC483C6F0EF7D77989 /* KeepAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF49E762E22E73BFC745E8 /* KeepAlive.swift */; };
+		AF1708FAF0E83AC63C44223B /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199CDCDDD6E1E8BE95E7FBB /* Simulation.swift */; };
+		BB41D40FC8FA0CE6EF606D47 /* FightAlarmSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679A84AA759DC70055E618 /* FightAlarmSheet.swift */; };
+		BEE2963515E5AD77CD987089 /* AppExpiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E05A6EF5D420DCB224B453 /* AppExpiry.swift */; };
+		BF2AB36FD348C836BD69A16A /* DingDingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDA0D1033EE9B4D4B8BAC8 /* DingDingTests.swift */; };
+		C38B2F4536688E7CC2EE0CEA /* SharedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D45543CAA6F64EDCDF02C5 /* SharedActivity.swift */; };
+		D5C78A04FFE78BAF80FF518A /* TriggerLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053B56A1DD70F4360D03B75D /* TriggerLogic.swift */; };
+		ED1334F211F918EF2DB0DD1F /* fightcenter_upcoming.json in Resources */ = {isa = PBXBuildFile; fileRef = B64C729A7EF1031EAB009693 /* fightcenter_upcoming.json */; };
+		EF944228E700E3EB5B13E0AA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED486D70D7D65F0D38ADF5 /* SettingsView.swift */; };
+		F79DE98A8DAA72140837F657 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFE0AB2AB8B54B843FE184 /* FavoritesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99BF51987CCD01D9A8FB6647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D6D9532F99B90B410AA917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C348F3C517D147A31F91FD1;
+			remoteInfo = DingDing;
+		};
+		D4F9D0828A25ED2F18F52AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D6D9532F99B90B410AA917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E7659362082251934E4273;
+			remoteInfo = DingDingWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79283A61CD351F094E39C6F8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				906C04E0E11E5903CCA7B806 /* DingDingWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		053B56A1DD70F4360D03B75D /* TriggerLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerLogic.swift; sourceTree = "<group>"; };
+		12D18BAF70D144DDFED16F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156217AA44A3C63F4744A112 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		1909ED3DDD85145BF06B0160 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		20AFE0AB2AB8B54B843FE184 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		210BAAC9CDDBE43D58034190 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
+		27949B7B290710EF724CD70E /* fightcenter_final.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fightcenter_final.json; sourceTree = "<group>"; };
+		2B679A84AA759DC70055E618 /* FightAlarmSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightAlarmSheet.swift; sourceTree = "<group>"; };
+		335E52586B16EEC5621382EF /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		37ED486D70D7D65F0D38ADF5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		486C52F11A3A2396FE128766 /* DingDingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingDingApp.swift; sourceTree = "<group>"; };
+		49AF49E762E22E73BFC745E8 /* KeepAlive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAlive.swift; sourceTree = "<group>"; };
+		55893F9607F1AA3EE66D508D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B1BDC20C071618B3A52AD4F /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		6146314D6BC715D980048780 /* WatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchService.swift; sourceTree = "<group>"; };
+		71771C52C302DE51E7DB6E40 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		7AB61AB87B482F5A7FC2D9F5 /* scoreboard_ufc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoreboard_ufc.json; sourceTree = "<group>"; };
+		7DF3BBDAC3DDC66B257FB0B9 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		8199CDCDDD6E1E8BE95E7FBB /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		884EBF14CF1D60A69F1A9F37 /* ESPNClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESPNClient.swift; sourceTree = "<group>"; };
+		921025C10A26EB72B5E6624E /* DingDing.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DingDing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989205FBB351BC1D5AC8BCD /* VeilleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeilleViews.swift; sourceTree = "<group>"; };
+		9A8D9197A31C862E3ADE2216 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9F212BC16EB2263926F0451F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7A1CB4C1FCC9ED2726E885E /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
+		B64C729A7EF1031EAB009693 /* fightcenter_upcoming.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fightcenter_upcoming.json; sourceTree = "<group>"; };
+		C7CDA0D1033EE9B4D4B8BAC8 /* DingDingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingDingTests.swift; sourceTree = "<group>"; };
+		EEC48C30D41C6DAB80665B51 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		F22B8583C2AE58CFECF98832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F2D45543CAA6F64EDCDF02C5 /* SharedActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedActivity.swift; sourceTree = "<group>"; };
+		F3599B145657B4FA0F9E09F7 /* DingDingWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingDingWidgets.swift; sourceTree = "<group>"; };
+		F53DCB2BC19AAA58E6E97610 /* DingDingWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DingDingWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E05A6EF5D420DCB224B453 /* AppExpiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExpiry.swift; sourceTree = "<group>"; };
+		FE6C2820154137C2CF0D0AB6 /* DingDingTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DingDingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0337A85F3A81F97F676027D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1CB4C1FCC9ED2726E885E /* AlarmsView.swift */,
+				7DF3BBDAC3DDC66B257FB0B9 /* Components.swift */,
+				9F212BC16EB2263926F0451F /* ContentView.swift */,
+				156217AA44A3C63F4744A112 /* EventDetailView.swift */,
+				5B1BDC20C071618B3A52AD4F /* EventsView.swift */,
+				20AFE0AB2AB8B54B843FE184 /* FavoritesView.swift */,
+				2B679A84AA759DC70055E618 /* FightAlarmSheet.swift */,
+				EEC48C30D41C6DAB80665B51 /* PreviewData.swift */,
+				37ED486D70D7D65F0D38ADF5 /* SettingsView.swift */,
+				9989205FBB351BC1D5AC8BCD /* VeilleViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AB9852DB0F0DF36D8731F5A /* DingDingWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				F3599B145657B4FA0F9E09F7 /* DingDingWidgets.swift */,
+				55893F9607F1AA3EE66D508D /* Info.plist */,
+			);
+			path = DingDingWidgets;
+			sourceTree = "<group>";
+		};
+		600DAAC35170FA51023BC4B1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1909ED3DDD85145BF06B0160 /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6B35975CDFE1DD9F6C66FFCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				210BAAC9CDDBE43D58034190 /* AlarmScheduler.swift */,
+				F5E05A6EF5D420DCB224B453 /* AppExpiry.swift */,
+				71771C52C302DE51E7DB6E40 /* AppStore.swift */,
+				884EBF14CF1D60A69F1A9F37 /* ESPNClient.swift */,
+				49AF49E762E22E73BFC745E8 /* KeepAlive.swift */,
+				335E52586B16EEC5621382EF /* Log.swift */,
+				8199CDCDDD6E1E8BE95E7FBB /* Simulation.swift */,
+				6146314D6BC715D980048780 /* WatchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7899738AA5D5BC2687F9F311 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F2D45543CAA6F64EDCDF02C5 /* SharedActivity.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		964F60400FFB862E1ECC5586 /* DingDingTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7CDA0D1033EE9B4D4B8BAC8 /* DingDingTests.swift */,
+				CCBBB67315EADC7D0AA77EC1 /* Fixtures */,
+			);
+			path = DingDingTests;
+			sourceTree = "<group>";
+		};
+		9879F74C1488D525AA4CCAE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				486C52F11A3A2396FE128766 /* DingDingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0FF4A3322072DAD4D2BFB9 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				053B56A1DD70F4360D03B75D /* TriggerLogic.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		AE5F14687FB3F746AAA180D5 = {
+			isa = PBXGroup;
+			children = (
+				600DAAC35170FA51023BC4B1 /* Config */,
+				F9EB49DB3D32DDE35A930A37 /* DingDing */,
+				964F60400FFB862E1ECC5586 /* DingDingTests */,
+				4AB9852DB0F0DF36D8731F5A /* DingDingWidgets */,
+				7899738AA5D5BC2687F9F311 /* Shared */,
+				DD9ADBCC0ED033626F13A2F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B006C7C79CA492A2C3816457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D9197A31C862E3ADE2216 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE779CF9BB1D17858F31B019 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12D18BAF70D144DDFED16F0B /* Assets.xcassets */,
+				F22B8583C2AE58CFECF98832 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCBBB67315EADC7D0AA77EC1 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				27949B7B290710EF724CD70E /* fightcenter_final.json */,
+				B64C729A7EF1031EAB009693 /* fightcenter_upcoming.json */,
+				7AB61AB87B482F5A7FC2D9F5 /* scoreboard_ufc.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		DD9ADBCC0ED033626F13A2F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921025C10A26EB72B5E6624E /* DingDing.app */,
+				FE6C2820154137C2CF0D0AB6 /* DingDingTests.xctest */,
+				F53DCB2BC19AAA58E6E97610 /* DingDingWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9EB49DB3D32DDE35A930A37 /* DingDing */ = {
+			isa = PBXGroup;
+			children = (
+				9879F74C1488D525AA4CCAE8 /* App */,
+				AA0FF4A3322072DAD4D2BFB9 /* Logic */,
+				B006C7C79CA492A2C3816457 /* Models */,
+				BE779CF9BB1D17858F31B019 /* Resources */,
+				6B35975CDFE1DD9F6C66FFCC /* Services */,
+				0337A85F3A81F97F676027D6 /* Views */,
+			);
+			path = DingDing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C348F3C517D147A31F91FD1 /* DingDing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D32B17DB19913CBC7DE2432 /* Build configuration list for PBXNativeTarget "DingDing" */;
+			buildPhases = (
+				7A86AD16DAA18DD77948DECD /* Sources */,
+				EF6547F7FCC841EF752F77EC /* Resources */,
+				79283A61CD351F094E39C6F8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C9E46F9FE74D33CECD3706 /* PBXTargetDependency */,
+			);
+			name = DingDing;
+			packageProductDependencies = (
+			);
+			productName = DingDing;
+			productReference = 921025C10A26EB72B5E6624E /* DingDing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5F7EA272B04568A65F6B237 /* DingDingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842709F3DE3E65D552AF017D /* Build configuration list for PBXNativeTarget "DingDingTests" */;
+			buildPhases = (
+				6FA6EDB5CE00F71F3F079626 /* Sources */,
+				80B07DE49AE37160C0CB5DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B91C26A1D47F765266054EFD /* PBXTargetDependency */,
+			);
+			name = DingDingTests;
+			packageProductDependencies = (
+			);
+			productName = DingDingTests;
+			productReference = FE6C2820154137C2CF0D0AB6 /* DingDingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9E7659362082251934E4273 /* DingDingWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7297DE0ADE0B388AB27D0C3 /* Build configuration list for PBXNativeTarget "DingDingWidgets" */;
+			buildPhases = (
+				D498793857B1ED34F8389D8D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingDingWidgets;
+			packageProductDependencies = (
+			);
+			productName = DingDingWidgets;
+			productReference = F53DCB2BC19AAA58E6E97610 /* DingDingWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1D6D9532F99B90B410AA917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2C348F3C517D147A31F91FD1 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B5F7EA272B04568A65F6B237 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C9E7659362082251934E4273 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0D1313D9D9233711BCB74CF4 /* Build configuration list for PBXProject "DingDing" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AE5F14687FB3F746AAA180D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DD9ADBCC0ED033626F13A2F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C348F3C517D147A31F91FD1 /* DingDing */,
+				C9E7659362082251934E4273 /* DingDingWidgets */,
+				B5F7EA272B04568A65F6B237 /* DingDingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80B07DE49AE37160C0CB5DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5208F913F434D4DF921D61 /* fightcenter_final.json in Resources */,
+				ED1334F211F918EF2DB0DD1F /* fightcenter_upcoming.json in Resources */,
+				80D7DA5D1C57BEE54596C970 /* scoreboard_ufc.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6547F7FCC841EF752F77EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE4C43EB9AF447FBFBDB17F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FA6EDB5CE00F71F3F079626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AB36FD348C836BD69A16A /* DingDingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A86AD16DAA18DD77948DECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092E32207412C444939E76D7 /* AlarmScheduler.swift in Sources */,
+				78F8A7EF4BBA9DD42B1A85CB /* AlarmsView.swift in Sources */,
+				BEE2963515E5AD77CD987089 /* AppExpiry.swift in Sources */,
+				420832766CBBD8C57F74EB47 /* AppStore.swift in Sources */,
+				12DBF95802742DBEE621C7E5 /* Components.swift in Sources */,
+				58AFF818F246F6C1DE3C130A /* ContentView.swift in Sources */,
+				4E600B4C9AB7DD00F6AA6CC7 /* DingDingApp.swift in Sources */,
+				3559ABDE6FEA90CF487845DD /* ESPNClient.swift in Sources */,
+				386C0C4D93707C4DC2F4CBDD /* EventDetailView.swift in Sources */,
+				189367F0273CD5F9B47BE6AA /* EventsView.swift in Sources */,
+				F79DE98A8DAA72140837F657 /* FavoritesView.swift in Sources */,
+				BB41D40FC8FA0CE6EF606D47 /* FightAlarmSheet.swift in Sources */,
+				A9D510FC483C6F0EF7D77989 /* KeepAlive.swift in Sources */,
+				A079692E73B3AB9A91A8EFEF /* Log.swift in Sources */,
+				29A99B51614683DCC31F66D0 /* Models.swift in Sources */,
+				377FEDD92FD77B89A99FCC2F /* PreviewData.swift in Sources */,
+				EF944228E700E3EB5B13E0AA /* SettingsView.swift in Sources */,
+				2ADF2664C50A3A202ADF3085 /* SharedActivity.swift in Sources */,
+				AF1708FAF0E83AC63C44223B /* Simulation.swift in Sources */,
+				D5C78A04FFE78BAF80FF518A /* TriggerLogic.swift in Sources */,
+				1C726CCACD8395C9089EC77F /* VeilleViews.swift in Sources */,
+				63CCF15C5D74EA700799FA18 /* WatchService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D498793857B1ED34F8389D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8E692A783065FE6C370876 /* DingDingWidgets.swift in Sources */,
+				C38B2F4536688E7CC2EE0CEA /* SharedActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35C9E46F9FE74D33CECD3706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E7659362082251934E4273 /* DingDingWidgets */;
+			targetProxy = D4F9D0828A25ED2F18F52AFB /* PBXContainerItemProxy */;
+		};
+		B91C26A1D47F765266054EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C348F3C517D147A31F91FD1 /* DingDing */;
+			targetProxy = 99BF51987CCD01D9A8FB6647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		261E27764597FE321D9E81A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DingDingWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding.widgets";
+				PRODUCT_NAME = DingDingWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		297184FF15A18F0D0864EB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding.tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DingDing.app/DingDing";
+			};
+			name = Debug;
+		};
+		2A96B8F4F8809307507A2807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding.tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DingDing.app/DingDing";
+			};
+			name = Release;
+		};
+		3250DFFECC59547526521663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1909ED3DDD85145BF06B0160 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		793C56AC6E9919B43E7DD913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DingDing/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding";
+				PRODUCT_NAME = DingDing;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A891A0D9B0331713EA63ED7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DingDing/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding";
+				PRODUCT_NAME = DingDing;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B918BE8E15FEAFFF44F4609A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1909ED3DDD85145BF06B0160 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F34EE011A450DA2DC0E826F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DingDingWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DING_BUNDLE_PREFIX).dingding.widgets";
+				PRODUCT_NAME = DingDingWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D1313D9D9233711BCB74CF4 /* Build configuration list for PBXProject "DingDing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B918BE8E15FEAFFF44F4609A /* Debug */,
+				3250DFFECC59547526521663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0D32B17DB19913CBC7DE2432 /* Build configuration list for PBXNativeTarget "DingDing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C56AC6E9919B43E7DD913 /* Debug */,
+				A891A0D9B0331713EA63ED7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		842709F3DE3E65D552AF017D /* Build configuration list for PBXNativeTarget "DingDingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297184FF15A18F0D0864EB92 /* Debug */,
+				2A96B8F4F8809307507A2807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D7297DE0ADE0B388AB27D0C3 /* Build configuration list for PBXNativeTarget "DingDingWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261E27764597FE321D9E81A7 /* Debug */,
+				F34EE011A450DA2DC0E826F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1D6D9532F99B90B410AA917 /* Project object */;
+}
